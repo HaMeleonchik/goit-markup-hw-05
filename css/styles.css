@@ -622,9 +622,14 @@ cursor: pointer;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     
     }
     
@@ -644,7 +649,6 @@ cursor: pointer;
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
-    
     transform: translate(-50%, -50%);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
@@ -661,12 +665,18 @@ cursor: pointer;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        padding: 72px 24px 24px 24px;
+        padding-right: 24px;
+        padding-top: 72px;
+         padding-left: 24px; 
+        margin-bottom: 16px; 
     }
     
     .modal-form{
         padding-left: 24px;
         padding-right: 24px;
+    }
+    .close-model-button{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
     /* close */
     .close-model-button{
@@ -745,26 +755,16 @@ cursor: pointer;
         height: 120px;
         border-radius: 4px;
         padding: 8px 16px;
-    outline: none;
     resize: none;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
-    }
-
-    .form-comment-label{
-        display: block;
-        margin-bottom: 4px;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
-        color: rgba(46, 47, 66, 0.4);
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        background-color: transparent;
-        outline: transparent; 
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    outline: transparent; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
      
